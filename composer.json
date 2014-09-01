@@ -1,0 +1,12 @@
+{
+    "name": "romannowicki/assure",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Assure\\": "assure"
+        },
+        "files": [
+            "assure.php"
+        ]
+    }
+}
