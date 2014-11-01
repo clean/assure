@@ -3,7 +3,7 @@ namespace Assure;
 
 class EncodedUri
 {
-    publci function assure(&$value)
+    public function assure(&$value)
     {
         if (!preg_match("@^[a-zA-Z0-9%+-_/]*$@", $value)) {
             $result = array();
