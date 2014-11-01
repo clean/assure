@@ -14,7 +14,7 @@ function assure(&$value, $assures)
         }
 
         try {
-            list($name, $operator, $operand) = array_merge(explode(' ', $cmd), array(null, null));
+            list(, $operator, $operand) = array_merge(explode(' ', $cmd), array(null, null));
 
             $copy = $value;
             $instances[$cmd]->assure($copy, $operator, $operand);
