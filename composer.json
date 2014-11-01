@@ -3,10 +3,11 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Assure\\": "assure"
+            "Assure\\": "src/assure"
         },
         "files": [
-            "assure.php"
+            "src/assure.php"
+            "src/validate.php"
         ]
     }
 }
