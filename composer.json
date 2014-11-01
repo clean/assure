@@ -1,6 +1,8 @@
 {
     "name": "romannowicki/assure",
     "type": "library",
+    "licence": "Apache-2.0",
+    "version": "1.0.0",
     "autoload": {
         "psr-4": {
             "Assure\\": "src/assure"
