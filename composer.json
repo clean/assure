@@ -6,8 +6,7 @@
             "Assure\\": "src/assure"
         },
         "files": [
-            "src/assure.php"
-            "src/validate.php"
+            "assure.php"
         ]
     }
 }
