@@ -1,5 +1,8 @@
-assure
-======
+# assure
+
+[![Build Status](https://scrutinizer-ci.com/g/romannowicki/assure/badges/build.png?b=master)](https://scrutinizer-ci.com/g/romannowicki/assure/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/romannowicki/assure/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/romannowicki/assure/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/romannowicki/assure/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/romannowicki/assure/?branch=master)
 
 Data correction and validation tools
 
