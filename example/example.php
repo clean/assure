@@ -2,4 +2,4 @@
 require 'vendor/autoload.php';
 $x = '1';
 
-assure($x, 'integer>10');
+assure($x, 'integer > 10');

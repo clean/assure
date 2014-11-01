@@ -8,13 +8,13 @@ function assure(&$value, $assures)
     $errors = array();
 
     foreach ($assures as $cmd) {
-        if (!isset($instances[$cmd])) {
-            $className = 'Assure\\' . ucfirst($cmd);
-            $instances[$cmd] = new $className();
-        }
-
         try {
-            list(, $operator, $operand) = array_merge(explode(' ', $cmd), array(null, null));
+            list($name, $operator, $operand) = array_merge(explode(' ', $cmd), array(null, null));
+
+            if (!isset($instances[$cmd])) {
+                $className = 'Assure\\' . ucfirst($name);
+                $instances[$cmd] = new $className();
+            }
 
             $copy = $value;
             $instances[$cmd]->assure($copy, $operator, $operand);
@@ -28,5 +28,25 @@ function assure(&$value, $assures)
 
     if (!$isValid) {
         throw new InvalidArgumentException(implode(' OR ', $errors), null, $e);
+    }
+}
+
+function assure_check_condition($value, $operator, $operand)
+{
+    switch ($operator) {
+        case '==':
+            return $value == $operand;
+        case '>=':
+            return $value >= $operand;
+        case '<=':
+            return $value <= $operand;
+        case '>':
+            return $value > $operand;
+        case '<':
+            return $value < $operand;
+        case '!=':
+            return $value != $operand;
+        default:
+            throw new InvalidArgumentException("Unknown operator '$operator' given");
     }
 }
