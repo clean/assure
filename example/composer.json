@@ -1,0 +1,6 @@
+{
+  "minimum-stability": "dev",
+  "require": {
+    "romannowicki/assure": "dev-master"
+  }
+}
