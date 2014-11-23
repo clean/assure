@@ -9,17 +9,17 @@ namespace {
         $isValid = false;
         $errors = array();
 
-        foreach ($assures as $cmd) {
+        foreach ($assures as $name) {
             try {
-                list($name, $operator, $operand) = array_merge(explode(' ', $cmd), array(null, null));
+                list($name, $operator, $operand) = array_merge(explode(' ', $name), array(null, null));
 
-                if (!isset($instances[$cmd])) {
+                if (!isset($instances[$name])) {
                     $className = 'Assure\\' . ucfirst($name);
-                    $instances[$cmd] = new $className();
+                    $instances[$name] = new $className();
                 }
 
                 $copy = $value;
-                $instances[$cmd]->assure($copy, $operator, $operand);
+                $instances[$name]->assure($copy, $operator, $operand);
                 $value = $copy;
                 $isValid = true;
             } catch (InvalidArgumentException $e) {
