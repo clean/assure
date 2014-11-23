@@ -15,7 +15,7 @@ class Integer
             $value = $int;
         }
 
-        if ($operator && !assure_check_condition($value, $operator, $operand)) {
+        if ($operator && !assureCheckCondition($value, $operator, $operand)) {
             throw new \InvalidArgumentException("Value should be $operator $operand");
         }
     }

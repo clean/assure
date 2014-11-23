@@ -31,7 +31,7 @@ function assure(&$value, $assures)
     }
 }
 
-function assure_check_condition($value, $operator, $operand)
+function assureCheckCondition($value, $operator, $operand)
 {
     switch ($operator) {
         case '==':
