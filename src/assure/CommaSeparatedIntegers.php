@@ -15,12 +15,14 @@ class CommaSeparatedIntegers
             $value = array($value);
         }
 
-        foreach ($value as $key => $el) {
-            $el = filter_var($el, FILTER_VALIDATE_INT);
-            if (false === $el) {
-                throw new \InvalidArgumentException('invalid type given');
+        array_walk(
+            $value,
+            function (&$el) {
+                $el = filter_var($el, FILTER_VALIDATE_INT);
+                if (false === $el) {
+                    throw new \InvalidArgumentException('invalid type given');
+                }
             }
-            $value[$key] = $el;
-        }
+        );
     }
 }
