@@ -7,6 +7,12 @@ class TestCase extends \PHPUnit_Framework_TestCase
         return [
             [true, true],
             [false, false],
+            [1, true],
+            [0, false],
+            ["true", true],
+            ["false", false],
+            ["on", true],
+            ["off", false],
         ];
     }
 
