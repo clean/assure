@@ -1,5 +1,4 @@
-<?php
-namespace Assure;
+<?php namespace Assure;
 
 class Boolean
 {
@@ -9,10 +8,14 @@ class Boolean
             return;
         }
 
+        if (is_object($value)) {
+            throw new \InvalidArgumentException('Object cannot be converted to boolean value');
+        }
+
         $bool = filter_var($value, FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE);
 
         if (null === $bool) {
-            throw new \InvalidArgumentException('invalid type given');
+            throw new \InvalidArgumentException(sprintf('Invalid type given %s', gettype($value)));
         }
 
         $value = $bool;
