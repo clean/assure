@@ -1,5 +1,4 @@
-<?php
-namespace Assure;
+<?php namespace Assure;
 
 class Date
 {
