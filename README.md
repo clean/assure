@@ -1,6 +1,6 @@
 # assure
 
-[![Build Status](https://scrutinizer-ci.com/g/romannowicki/assure/badges/build.png?b=master)](https://scrutinizer-ci.com/g/romannowicki/assure/build-status/master)
+[![Build Status](https://travis-ci.org/romannowicki/assure.svg?branch=2.0.0)](https://travis-ci.org/romannowicki/assure)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/romannowicki/assure/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/romannowicki/assure/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/romannowicki/assure/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/romannowicki/assure/?branch=master)
 
