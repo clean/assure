@@ -7,6 +7,7 @@ class TestCase extends \PHPUnit_Framework_TestCase
         return [
             [1, [1]],
             [[1,2], [1,2]],
+            [(object)[1,2], [1,2]],
         ];
     }
 
@@ -18,5 +19,25 @@ class TestCase extends \PHPUnit_Framework_TestCase
         assure($given, 'arrayOfIntegers');
         $this->assertInternalType('array', $expected);
         $this->assertEquals($given, $expected);
+    }
+
+    public function invalidData()
+    {
+        return [
+            [[]],
+            [null],
+            ['a'],
+            [[1,'a']],
+            [(object)[1,'a']],
+        ];
+    }
+
+    /**
+     * @expectedException \InvalidArgumentException
+     * @dataProvider invalidData
+     */
+    public function testInValidData($given)
+    {
+        assure($given, 'arrayOfIntegers');
     }
 }
