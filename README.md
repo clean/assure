@@ -12,7 +12,7 @@ via [Composer](https://packagist.org/packages/romannowicki/assure):
 
 ```json
 "require": {
-  "romannowicki/assure": "2.0.0"
+  "romannowicki/assure": "2.0.1"
 }
 ```
 
