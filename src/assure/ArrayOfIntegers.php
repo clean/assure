@@ -5,9 +5,13 @@ class ArrayOfIntegers
 {
     public function assure(&$value)
     {
+        if (!$value) {
+            throw new \InvalidArgumentException('Empty array');
+        }
+
         if (is_scalar($value)) {
             $value = array($value);
-        } else if ($value instanceof \stdClass) {
+        } elseif ($value instanceof \stdClass) {
             $value = (array)$value;
         }
 
@@ -17,10 +21,6 @@ class ArrayOfIntegers
                 throw new \InvalidArgumentException('value must be array of integers');
             }
             $value[$key] = $el;
-        }
-
-        if (!$value) {
-            throw new \InvalidArgumentException('Empty array');
         }
     }
 }
