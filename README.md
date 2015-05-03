@@ -8,7 +8,7 @@ Data correction and validation tools
 
 ## Installation
 
-via Composer:
+via [Composer](https://packagist.org/packages/romannowicki/assure):
 
 ```json
 "require": {
