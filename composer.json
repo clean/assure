@@ -1,5 +1,6 @@
 {
     "name": "romannowicki/assure",
+    "description": "Data correction and validation",
     "type": "library",
     "license": "Apache-2.0",
     "version": "1.0.0",
