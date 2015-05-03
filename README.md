@@ -12,7 +12,7 @@ via Composer:
 
 ```json
 "require": {
-  "romannowicki/assure": "1.0.0"
+  "romannowicki/assure": "2.0.0"
 }
 ```
 
