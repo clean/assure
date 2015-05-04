@@ -5,14 +5,10 @@ class CommaSeparatedIntegers
 {
     public function assure(&$value)
     {
-        if (is_null($value) || $value === '') {
-            throw new \InvalidArgumentException('invalid type given');
-        }
-
-        if (strpos($value, ',')) {
-            $value = explode(',', $value);
+        if (is_scalar($value) && $value !== '') {
+            $value = explode(',', trim($value, ','));
         } else {
-            $value = array($value);
+            throw new \InvalidArgumentException('invalid type given');
         }
 
         array_walk(
