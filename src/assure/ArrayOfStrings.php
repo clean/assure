@@ -5,9 +5,13 @@ class ArrayOfStrings
 {
     public function assure(&$value)
     {
+        if (!$value) {
+            throw new \InvalidArgumentException('Empty value given');
+        }
+
         if (is_scalar($value)) {
             $value = array($value);
-        } else if ($value instanceof \stdClass) {
+        } elseif ($value instanceof \stdClass) {
             $value = (array)$value;
         }
 
