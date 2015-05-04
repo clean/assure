@@ -5,21 +5,19 @@ class CommaSeparatedStrings
 {
     public function assure(&$value)
     {
-        if ($value == '') {
-            throw new \InvalidArgumentException('Invalid type given');
-        }
-
-        if (strpos($value, ',')) {
-            $value = explode(',', $value);
+        if (is_scalar($value) && $value !== '') {
+            $value = explode(',', trim($value, ','));
         } else {
-            $value = array($value);
+            throw new \InvalidArgumentException('invalid type given');
         }
 
-        foreach ($value as $key => $el) {
-            if (!is_string($el)) {
-                throw new \InvalidArgumentException('Invalid type given');
+        array_walk(
+            $value,
+            function (&$el) {
+                if (!is_string($el)) {
+                    throw new \InvalidArgumentException('invalid type given');
+                }
             }
-            $value[$key] = $el;
-        }
+        );
     }
 }
