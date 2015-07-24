@@ -1,18 +1,18 @@
-# assure
+# clean/assure
 
-[![Build Status](https://travis-ci.org/romannowicki/assure.svg?branch=2.0.0)](https://travis-ci.org/romannowicki/assure)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/romannowicki/assure/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/romannowicki/assure/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/romannowicki/assure/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/romannowicki/assure/?branch=master)
+[![Build Status](https://travis-ci.org/clean/assure.svg?branch=2.0.0)](https://travis-ci.org/clean/assure)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/clean/assure/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/clean/assure/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/clean/assure/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/clean/assure/?branch=master)
 
-Data correction and validation tools
+Data correction and validation tools.
 
 ## Installation
 
-via [Composer](https://packagist.org/packages/romannowicki/assure):
+via [Composer](https://packagist.org/packages/clean/assure):
 
 ```json
 "require": {
-  "romannowicki/assure": "2.0.1"
+  "clean/assure": "2.*"
 }
 ```
 

@@ -1,5 +1,5 @@
 {
-    "name": "romannowicki/assure",
+    "name": "clean/assure",
     "description": "Data correction and validation",
     "type": "library",
     "license": "MIT",
@@ -13,7 +13,6 @@
     },
     "require-dev": {
       "phpunit/phpunit": "4.2.*",
-      "satooshi/php-coveralls": "dev-master",
       "scrutinizer/ocular": "dev-master"
     }
 }
