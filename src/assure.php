@@ -14,7 +14,7 @@ namespace {
                 list($name, $operator, $operand) = array_merge(explode(' ', $name), array(null, null));
 
                 if (!isset($instances[$name])) {
-                    $className = 'Assure\\' . ucfirst($name);
+                    $className = 'Assure\\' . ucfirst($name) . 'Command';
                     $instances[$name] = new $className();
                 }
 

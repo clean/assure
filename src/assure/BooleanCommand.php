@@ -1,6 +1,6 @@
 <?php namespace Assure;
 
-class Boolean
+class BooleanCommand
 {
     public function assure(&$value)
     {

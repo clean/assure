@@ -1,7 +1,6 @@
-<?php
-namespace Assure;
+<?php namespace Assure;
 
-class ArrayOfIntegers
+class ArrayOfIntegersCommand
 {
     public function assure(&$value)
     {

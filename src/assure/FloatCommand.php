@@ -1,7 +1,6 @@
-<?php
-namespace Assure;
+<?php namespace Assure;
 
-class Float
+class FloatCommand
 {
     public function assure(&$value)
     {

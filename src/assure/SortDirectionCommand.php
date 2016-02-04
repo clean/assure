@@ -1,7 +1,6 @@
-<?php
-namespace Assure;
+<?php namespace Assure;
 
-class SortDirection
+class SortDirectionCommand
 {
     public function assure(&$value)
     {

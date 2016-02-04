@@ -1,7 +1,6 @@
-<?php
-namespace Assure;
+<?php namespace Assure;
 
-class SortedArray
+class SortedArrayCommand
 {
     public function assure(&$value)
     {

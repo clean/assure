@@ -1,6 +1,6 @@
 <?php namespace Assure;
 
-class Date
+class DateCommand
 {
     public function assure(&$value)
     {

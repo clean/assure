@@ -1,7 +1,6 @@
-<?php
-namespace Assure;
+<?php namespace Assure;
 
-class Object
+class ObjectCommand
 {
     public function assure(&$value)
     {

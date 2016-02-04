@@ -1,7 +1,7 @@
 <?php
 namespace Assure;
 
-class CommaSeparatedIntegers
+class CommaSeparatedIntegersCommand
 {
     public function assure(&$value)
     {

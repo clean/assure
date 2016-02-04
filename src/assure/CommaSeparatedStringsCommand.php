@@ -1,7 +1,6 @@
-<?php
-namespace Assure;
+<?php namespace Assure;
 
-class CommaSeparatedStrings
+class CommaSeparatedStringsCommand
 {
     public function assure(&$value)
     {

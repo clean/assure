@@ -1,7 +1,6 @@
-<?php
-namespace Assure;
+<?php namespace Assure;
 
-class String
+class StringCommand
 {
     public function assure(&$value)
     {

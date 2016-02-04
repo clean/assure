@@ -1,7 +1,6 @@
-<?php
-namespace Assure;
+<?php namespace Assure;
 
-class Integer
+class IntegerCommand
 {
     public function assure(&$value, $operator, $operand)
     {
