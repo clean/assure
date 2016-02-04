@@ -9,13 +9,6 @@
 
 via [Composer](https://packagist.org/packages/clean/assure):
 
-```json
-"require": {
-  "clean/assure": "2.*"
-}
-```
-
-
 ## Usage example
 
 ```php 
