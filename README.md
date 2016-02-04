@@ -5,8 +5,6 @@
 [![Test Coverage](https://codeclimate.com/github/clean/assure/badges/coverage.svg)](https://codeclimate.com/github/clean/assure/coverage)
 [![Issue Count](https://codeclimate.com/github/clean/assure/badges/issue_count.svg)](https://codeclimate.com/github/clean/assure)
 
-Data correction and validation tools.
-
 ## Installation
 
 via [Composer](https://packagist.org/packages/clean/assure):
@@ -16,6 +14,7 @@ via [Composer](https://packagist.org/packages/clean/assure):
   "clean/assure": "2.*"
 }
 ```
+
 
 ## Usage example
 
@@ -30,3 +29,7 @@ assure($value, 'integer');
 // invalid values: 'a', '1,2,a,4,b';
 assure($value, ['integer', 'commaSeparatedIntegers']); 
 ```
+
+## Documentation
+
+http://cleanassure.readthedocs.org
