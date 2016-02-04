@@ -4,6 +4,10 @@ php:
   - 5.6
   - hhvm
 
+addons:
+  code_climate:
+    repo_token:a69c871494bb9454a988a63745d378cfc632739d0e47b7b4aefd6cf94bc5dff2
+
 install:
   - composer install
 
@@ -14,5 +18,5 @@ script:
   - ./vendor/bin/phpunit
 
 after_script:
-  - if [[ "`php --version`" != *HipHop* ]] ; then CODECLIMATE_REPO_TOKEN=a69c871494bb9454a988a63745d378cfc632739d0e47b7b4aefd6cf94bc5dff2 ./vendor/bin/test-reporter
+  - if [[ "`php --version`" != *HipHop* ]] ; then ./vendor/bin/test-reporter
 
