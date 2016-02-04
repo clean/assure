@@ -7,7 +7,7 @@
 
 ## Installation
 
-via [Composer](https://packagist.org/packages/clean/assure):
+via [Composer](https://packagist.org/packages/clean/assure): `composer require clean/assure`
 
 ## Usage example
 
