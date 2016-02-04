@@ -1,6 +1,6 @@
 # clean/assure
 
-[![Build Status](https://travis-ci.org/clean/assure.svg?branch=2.0.0)](https://travis-ci.org/clean/assure)
+[![Build Status](https://travis-ci.org/clean/assure.svg?branch=master)](https://travis-ci.org/clean/assure)
 [![Code Climate](https://codeclimate.com/github/clean/assure/badges/gpa.svg)](https://codeclimate.com/github/clean/assure)
 [![Test Coverage](https://codeclimate.com/github/clean/assure/badges/coverage.svg)](https://codeclimate.com/github/clean/assure/coverage)
 [![Issue Count](https://codeclimate.com/github/clean/assure/badges/issue_count.svg)](https://codeclimate.com/github/clean/assure)
