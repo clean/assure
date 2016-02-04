@@ -5,12 +5,12 @@ class TestCase extends \PHPUnit_Framework_TestCase
     public function validData()
     {
         return [
-            ['0', [0]],
+            ['0', ['0']],
             ['a', ['a']],
             ['a,', ['a']],
             [',a', ['a']],
             [',a,b', ['a', 'b']],
-            ['1,2,3,4', [1,2,3,4]],
+            ['1,2,3,4', ['1','2','3','4']],
             ['a,b,c', ['a','b','c']],
             ['one,two', ['one','two']],
             ['1adb-)(*^&%$##,test', ['1adb-)(*^&%$##','test']],
