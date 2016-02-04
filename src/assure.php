@@ -52,7 +52,7 @@ namespace Assure {
             case '!=':
                 return $value != $operand;
             default:
-                throw new InvalidArgumentException("Unknown operator '$operator' given");
+                throw new \InvalidArgumentException("Unknown operator '$operator' given");
         }
     }
 }
