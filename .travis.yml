@@ -14,5 +14,4 @@ script:
   - phpunit --coverage-clover ./build/logs/clover.xml --bootstrap ./tests/bootstrap.php ./tests/
 
 after_script:
-  - if [[ "`php --version`" != *HipHop* ]] ; then php vendor/bin/coveralls -v ; fi
-  - if [[ "`php --version`" != *HipHop* ]] ; then php vendor/bin/ocular code-coverage:upload --format=php-clover ./build/logs/clover.xml ; fi
+  - if [[ "`php --version`" != *HipHop* ]] ; then CODECLIMATE_REPO_TOKEN=a69c871494bb9454a988a63745d378cfc632739d0e47b7b4aefd6cf94bc5dff2 ./vendor/bin/test-reporter
