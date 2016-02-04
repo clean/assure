@@ -1,4 +1,4 @@
-arrayOfStrings
+ArrayOfStrings
 ==============
 
   Ensure that variable is an array with elements that can be treated as string.

@@ -1,4 +1,4 @@
-boolean
+Boolean
 =======
 
   Ensure that variable has value that can be treated as bool value.
