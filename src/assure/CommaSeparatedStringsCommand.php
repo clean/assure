@@ -4,11 +4,11 @@ class CommaSeparatedStringsCommand
 {
     public function assure(&$value)
     {
-        if (is_scalar($value) && $value !== '') {
-            $value = explode(',', trim($value, ','));
-        } else {
+        if (! (is_scalar($value) && $value !== '')) {
             throw new \InvalidArgumentException('invalid type given');
         }
+
+        $value = explode(',', trim($value, ','));
 
         array_walk(
             $value,
