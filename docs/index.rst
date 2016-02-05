@@ -28,10 +28,9 @@ Installation
 
 via `Composer`_: ``composer require clean/assure``
 
-Available assures
-.................
 
 .. toctree::
+   :caption: Assure types
    :maxdepth: 2
    :glob:
 
