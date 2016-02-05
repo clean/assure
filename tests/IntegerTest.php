@@ -6,6 +6,8 @@ class TestCase extends \PHPUnit_Framework_TestCase
     {
         return [
             [1, 1],
+            [-1, -1],
+            ['-1', -1],
             ['10', 10],
         ];
     }
