@@ -7,22 +7,22 @@ CommaSeparatedIntegers
 
     .. code::
 
-      assure('commaSeparatedIntegers', $x = '1,2,3,4'); // $x => [1,2,3,4]
-      assure('commaSeparatedIntegers', $x = '1');       // $x => [1]
-      assure('commaSeparatedIntegers', $x = '1,');      // $x => [1]
-      assure('commaSeparatedIntegers', $x = ',1');      // $x => [1]
-      assure('commaSeparatedIntegers', $x = 1);         // $x => [1]
-      assure('commaSeparatedIntegers', $x = 0);         // $x => [0]
-      assure('commaSeparatedIntegers', $x = '0');       // $x => [0]
+      assure($x = '1,2,3,4', 'commaSeparatedIntegers'); // $x => [1,2,3,4]
+      assure($x = '1', 'commaSeparatedIntegers');       // $x => [1]
+      assure($x = '1,', 'commaSeparatedIntegers');      // $x => [1]
+      assure($x = ',1', 'commaSeparatedIntegers');      // $x => [1]
+      assure($x = 1, 'commaSeparatedIntegers');         // $x => [1]
+      assure($x = 0, 'commaSeparatedIntegers');         // $x => [0]
+      assure($x = '0', 'commaSeparatedIntegers');       // $x => [0]
 
   Incorect:
 
     .. code::
 
-      assure('commaSeparatedIntegers', $x = []);
-      assure('commaSeparatedIntegers', $x = null);
-      assure('commaSeparatedIntegers', $x = '');
-      assure('commaSeparatedIntegers', $x = 'a,2,3,4');
+      assure($x = [], 'commaSeparatedIntegers');
+      assure($x = null, 'commaSeparatedIntegers');
+      assure($x = '', 'commaSeparatedIntegers');
+      assure($x = 'a,2,3,4', 'commaSeparatedIntegers');
 
     All above method calls will throw ``\InvalidArgumentException``
   

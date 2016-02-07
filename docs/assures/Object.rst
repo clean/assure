@@ -8,19 +8,19 @@ Object
 
     .. code::
       
-      assure('object', $x = new stdClass);
-      assure('object', $x = new SomeObject);
-      assure('object', $x = ['x'=> 10, 'y'=20]);
+      assure($x = new stdClass, 'object');
+      assure($x = new SomeObject, 'object');
+      assure($x = ['x'=> 10, 'y'=20], 'object');
 
   Incorect:
 
     .. code::
 
-      assure('null', $x = 1);
-      assure('null', $x = false);
-      assure('null', $x = true);
-      assure('null', $x = '');
-      assure('null', $x = []);
+      assure($x = 1, 'object');
+      assure($x = false, 'object');
+      assure($x = true, 'object');
+      assure($x = '', 'object');
+      assure($x = [], 'object');
 
     All above values will throw ``\InvalidArgumentException``
   

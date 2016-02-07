@@ -8,20 +8,20 @@ ArrayOfStrings
 
     .. code::
 
-      assure('arrayOfStrings', $x = 'a');                     // $x = ['a']
-      assure('arrayOfStrings', $x = '-');                     // $x = ['-']
-      assure('arrayOfStrings', $x = ['one', 'two']);          // $x = ['one', 'two']
-      assure('arrayOfStrings', $x = (object)['one', 'two']);  // $x = ['one', 'two']
+      assure($x = 'a', 'arrayOfStrings');                     // $x = ['a']
+      assure($x = 1, 'arrayOfStrings');                       // $x = ['1']
+      assure($x = [1, 'two'], 'arrayOfStrings');          // $x = ['1', 'two']
+      assure($x = (object)['one', 'two'], 'arrayOfStrings');  // $x = ['one', 'two']
 
   Incorect:
 
     .. code::
 
-      assure('arrayOfStrings', $x = []);
-      assure('arrayOfStrings', $x = [null]);
-      assure('arrayOfStrings', $x = 1);
-      assure('arrayOfStrings', $x = [1,'a']);
-      assure('arrayOfStrings', $x = (object)[1,'a']);
+      assure($x = [], 'arrayOfStrings');
+      assure($x = [null], 'arrayOfStrings');
+      assure($x = 1, 'arrayOfStrings');
+      assure($x = [1,'a'], 'arrayOfStrings');
+      assure($x = (object)[1,'a'], 'arrayOfStrings');
 
     All above method calls will throw ``\InvalidArgumentException``
   

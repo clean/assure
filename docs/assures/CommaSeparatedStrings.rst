@@ -7,22 +7,22 @@ CommaSeparatedStrings
 
     .. code::
 
-      assure('commaSeparatedStrings', $x = '0');       // $x => ['0']
-      assure('commaSeparatedStrings', $x = 'a');       // $x => ['a']
-      assure('commaSeparatedStrings', $x = 'a,');      // $x => ['a']
-      assure('commaSeparatedStrings', $x = ',a');      // $x => ['a']
-      assure('commaSeparatedStrings', $x = ',a,b');    // $x => ['a', 'b']
-      assure('commaSeparatedStrings', $x = '1,2,3,4'); // $x => ['1','2','3','4']
-      assure('commaSeparatedStrings', $x = 'a,b,c');   // $x => ['a', 'b', 'c']
-      assure('commaSeparatedStrings', $x = '1#),#$%'); // $x => ['1#)', '#$%']
+      assure($x = '0', 'commaSeparatedStrings');       // $x => ['0']
+      assure($x = 'a', 'commaSeparatedStrings');       // $x => ['a']
+      assure($x = 'a,', 'commaSeparatedStrings');      // $x => ['a']
+      assure($x = ',a', 'commaSeparatedStrings');      // $x => ['a']
+      assure($x = ',a,b', 'commaSeparatedStrings');    // $x => ['a', 'b']
+      assure($x = '1,2,3,4', 'commaSeparatedStrings'); // $x => ['1','2','3','4']
+      assure($x = 'a,b,c', 'commaSeparatedStrings');   // $x => ['a', 'b', 'c']
+      assure($x = '1#),#$%', 'commaSeparatedStrings'); // $x => ['1#)', '#$%']
 
   Incorect:
 
     .. code::
 
-      assure('commaSeparatedStrings', $x = '[]');
-      assure('commaSeparatedStrings', $x = '');
-      assure('commaSeparatedStrings', $x = null);
+      assure($x = '[]', 'commaSeparatedStrings');
+      assure($x = '', 'commaSeparatedStrings');
+      assure($x = null, 'commaSeparatedStrings');
 
     All above method calls will throw ``\InvalidArgumentException``
   
