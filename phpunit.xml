@@ -6,7 +6,7 @@
     <log type="coverage-clover" target="build/logs/clover.xml"/>
   </logging>
   <testsuites>
-    <testsuite name="assures">
+    <testsuite name="all">
       <directory>tests</directory>
     </testsuite>
   </testsuites>
