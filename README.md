@@ -7,9 +7,9 @@
 
 ## Installation
 
-via [Composer](https://packagist.org/packages/clean/assure): `composer require clean/assure`
+via [Composer](https://packagist.org/packages/clean/assure)
 
-## Usage example
+## Example of Usage
 
 ```php 
 // if value is not integer and cannot be transform to integer assure with throw exception
