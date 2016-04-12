@@ -8,11 +8,6 @@ class SortedArrayCommand
             throw new \InvalidArgumentException('value must be array');
         }
 
-        $sorted = $value;
-        sort($sorted);
-
-        if ($sorted != $value) {
-            throw new \InvalidArgumentException('array is not sorted');
-        }
+        sort($value);
     }
 }
