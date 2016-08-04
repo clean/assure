@@ -10,7 +10,7 @@ ArrayOfStrings
 
       assure($x = 'a', 'arrayOfStrings');                     // $x = ['a']
       assure($x = 1, 'arrayOfStrings');                       // $x = ['1']
-      assure($x = [1, 'two'], 'arrayOfStrings');          // $x = ['1', 'two']
+      assure($x = [1, 'two'], 'arrayOfStrings');              // $x = ['1', 'two']
       assure($x = (object)['one', 'two'], 'arrayOfStrings');  // $x = ['one', 'two']
 
   Incorect:

@@ -7,7 +7,7 @@ Null
 
     .. code::
       
-      assure('null', $x = null);
+      assure($x = null, 'null');
 
   Incorect:
 

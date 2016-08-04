@@ -8,20 +8,21 @@ Float
 
     .. code::
 
-      1.1     => 1.1
-      '1.1'   => 1.1
-      1       => 1.0
-      '1'     => 1.0
+      assure($x = 1.1, 'float'); // $x => 1.1
+      assure($x = '1.1', 'float'); // $x => 1.1
+      assure($x = 1, 'float'); // $x => 1.0
+      assure($x = '1', 'float'); // $x => 1.0
 
   Incorect:
 
     .. code::
 
-      null 
-      'one'
-      false
-      true
-      []
+      assure($x = null, 'float');
+      assure($x = 'one', 'float');
+      assure($x = false, 'float');
+      assure($x = true, 'float');
+      assure($x = [], 'float');
+      assure($x = <object>, 'float');
 
     All above values will throw ``\InvalidArgumentException``
   
