@@ -9,14 +9,5 @@ class CommaSeparatedStringsCommand
         }
 
         $value = explode(',', trim($value, ','));
-
-        array_walk(
-            $value,
-            function (&$el) {
-                if (!is_string($el)) {
-                    throw new \InvalidArgumentException('invalid type given');
-                }
-            }
-        );
     }
 }
