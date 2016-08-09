@@ -8,6 +8,25 @@ Data correction and validation tools for PHP
 
 This package extends global namespace with ``assure`` method than can be used to correct and validate mixed data types.
 
+Mainly used to support duck typing of primitive types in function parameters to simplify interface usage eg.:
+
+.. code:: php
+
+  class Foo
+  {
+      public function filterById($id)
+      {
+          assure($name, ['arrayOfIntegers']);
+          // after assure we can trust that name is an array of integers
+          // otherwise exception will be raised
+      }
+  }
+
+  $foo = new Foo();
+  $foo->filterById(1)
+  $foo->filterById('1')
+  $foo->filterById(['1', 2])
+
 Example Of Usage
 ................
 
