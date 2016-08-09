@@ -5,6 +5,8 @@
 [![Test Coverage](https://codeclimate.com/github/clean/assure/badges/coverage.svg)](https://codeclimate.com/github/clean/assure/coverage)
 [![Issue Count](https://codeclimate.com/github/clean/assure/badges/issue_count.svg)](https://codeclimate.com/github/clean/assure)
 
+current version: [3.0.0](CHANGELOG.md)
+
 This package extends global namespace with assure method than can be used to correct and validate mixed data types.
 
 Mainly used to support duck typing of primitive types in function parameters to simplify interface usage eg.:
