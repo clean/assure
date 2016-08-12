@@ -4,8 +4,10 @@
 [![Code Climate](https://codeclimate.com/github/clean/assure/badges/gpa.svg)](https://codeclimate.com/github/clean/assure)
 [![Test Coverage](https://codeclimate.com/github/clean/assure/badges/coverage.svg)](https://codeclimate.com/github/clean/assure/coverage)
 [![Issue Count](https://codeclimate.com/github/clean/assure/badges/issue_count.svg)](https://codeclimate.com/github/clean/assure)
+[![Latest Stable Version](https://poser.pugx.org/clean/assure/v/stable)](https://packagist.org/packages/clean/assure)
+[![Total Downloads](https://poser.pugx.org/clean/assure/downloads)](https://packagist.org/packages/clean/assure)
+[![License](https://poser.pugx.org/clean/assure/license)](https://packagist.org/packages/clean/assure)
 
-current version: [3.0.0](CHANGELOG.md)
 
 This package extends global namespace with assure method than can be used to correct and validate mixed data types.
 
